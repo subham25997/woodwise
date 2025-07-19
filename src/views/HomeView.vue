@@ -44,7 +44,7 @@ import ImageCarousel from "../components/home/ImageCarousel.vue";
 import OurServices from "../components/home/OurServices.vue";
 import OurTeam from "../components/home/OurTeam.vue";
 import Testimonials from "../components/home/Testimonials.vue";
-import RecentProjects from "../components/home/RecentProjects.vue";
+import RecentProjects from "../components/projects/RecentProjects.vue";
 import FrequentQuestions from "../components/home/FrequentQuestions.vue";
 import WorkingProcess from "../components/about/WorkingProcess.vue";
 </script>

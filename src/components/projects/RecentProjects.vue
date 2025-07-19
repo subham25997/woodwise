@@ -1,5 +1,5 @@
 <template>
-  <BContainer style="min-height: 470px" class="pt-5 pb-lg-5">
+  <BContainer style="min-height: 470px" class="pt-5 pb-lg-4">
     <MiniTitle title="OUR RECENT PROJECTS" />
     <MainTitle
       title="Showcasing Masterpieces: Our Recent Creations"
