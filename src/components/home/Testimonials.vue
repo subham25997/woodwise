@@ -34,7 +34,7 @@
       >
         <SwiperSlide v-for="(testimonial, index) in testimonials" :key="index">
           <BCard
-            class="text-center pb-5 pt-5"
+            class="text-center pb-5 pt-4"
             style="min-height: 230px; border: none; background-color: #362716"
           >
             <BCardText class="fst-italic text-white">

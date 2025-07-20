@@ -9,7 +9,7 @@
         <BImg src="/logo.png" alt="Logo" height="50" class="me-2" />
       </BNavbarBrand>
 
-      <AppSearch v-if="width < 992"/>
+      <AppSearch v-if="width < 992" />
       <BNavbarToggle target="nav-collapse" style="top: 17px" />
       <BCollapse id="nav-collapse" is-nav>
         <BNavbarNav>
@@ -18,7 +18,7 @@
             <BNavItem
               v-if="!item.children"
               :to="item.path"
-              class="px-lg-2 px-md-1 px-xl-3 pb-2 text-capitalize"
+              class="px-lg-2 px-xl-3 px-3 pb-2 text-capitalize"
               :active="String(activeItem).toLowerCase() === item.path.toLowerCase()"
             >
               {{ item.name }}
@@ -36,7 +36,7 @@
               }"
             >
               <BDropdownItem
-                class="text-capitalize"
+                class="text-capitalize nav--dropdown-item"
                 v-for="child in item.children"
                 :key="child.name"
                 :to="child.path"
@@ -121,4 +121,31 @@ onUnmounted(() => {
 });
 </script>
 
-<style></style>
+<style>
+ul:has(> .nav--dropdown-item) {
+  background-color: #392414;
+  min-width: 250px;
+  padding: 16px;
+
+  a {
+    color: #eee !important;
+    padding-left: 36px !important;
+    
+    &:focus,
+    &:active,
+    &.router-link-active,
+    &.active {
+      background-color: #392414 !important;
+      color: rgb(249, 149, 74) !important;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s ease;
+      background-color: #392414 !important;
+      color: #fff !important;
+    }
+    
+  }
+}
+</style>

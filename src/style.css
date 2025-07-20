@@ -204,14 +204,12 @@ p {
 }
 
 .nav-link.active,
-.dropdown .dropdown-item.active,
 .dropdown.active .btn-link {
     color: #007bff !important;
     background-color: transparent !important;
 }
 
-.nav-link.active::after,
-.dropdown .dropdown-item.active::after {
+.nav-link.active::after {
     content: "";
     position: absolute;
     left: 0;

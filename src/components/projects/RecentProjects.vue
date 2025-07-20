@@ -19,7 +19,7 @@
             :src="project.img"
             alt="Card image"
             top
-            height="380"
+            height="500"
             class="rounded-0 card--img"
             style="opacity: 0.8"
           />

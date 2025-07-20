@@ -35,28 +35,28 @@ import MainTitle from "../headings/MainTitle.vue";
 const pricingItems = [
   {
     title: "Kitchen Cabinetry",
-    price: "$50.00",
+    price: "$550.00",
     image: "/Cabinetry.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     title: "Meeting Set",
-    price: "$20.00",
+    price: "$220.00",
     image: "/office.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     title: "Sofa Set",
-    price: "$20.00",
+    price: "$320.00",
     image: "/Renovation.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     title: "Library Set",
-    price: "$20.00",
+    price: "$420.00",
     image: "/library.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
