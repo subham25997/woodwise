@@ -2,7 +2,7 @@
   <BNavbar :class="{ 'sticky-navbar': isSticky, shadow: isSticky }" toggleable="lg">
     <BContainer
       :fluid="width < 992"
-      class="d-md-flex flex-wrap align-items-md-center"
+      class="d-flex flex-wrap align-items-md-center"
       :style="{ paddingRight: width < 992 ? '80px' : '' }"
     >
       <BNavbarBrand href="#" class="flex-grow-1">
@@ -18,7 +18,7 @@
             <BNavItem
               v-if="!item.children"
               :to="item.path"
-              class="px-3 pb-2 text-capitalize"
+              class="px-lg-2 px-md-1 px-xl-3 pb-2 text-capitalize"
               :active="String(activeItem).toLowerCase() === item.path.toLowerCase()"
             >
               {{ item.name }}
@@ -75,7 +75,7 @@ const navBarArray = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
   { name: "Services", path: "/services" },
-  { name: "Projects", path: "/projects" },
+  { name: "Projects & Pricing", path: "/projects" },
   { name: "Contact Us", path: "/contact-us" },
   {
     name: "Documentation",

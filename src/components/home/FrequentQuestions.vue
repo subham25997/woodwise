@@ -33,7 +33,7 @@
       <BFormGroup class="mb-3" label="Email" label-for="email">
         <BFormInput class="input-field" size="lg" autocomplete="off" id="email" type="email" v-model="email" required />
       </BFormGroup>
-      <BFormGroup class="mb-4" label="Question" label-for="question">
+      <BFormGroup class="mb-3" label="Question" label-for="question">
         <BFormTextarea class="input-field" autocomplete="off" id="question" v-model="question" rows="3" required />
       </BFormGroup>
       <div class="py-3">

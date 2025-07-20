@@ -12,12 +12,17 @@
         class="p-2"
       >
         <BImg
-          class="img-fluid"
+          class="img-fluid w-100"
           :src="item.image"
           :alt="item.image"
           style="height: 240px"
         />
-        <h4 class="fs-4 fw-medium pt-3 text-center"><span class="text-muted me-1">{{ item.title }}</span> ({{ item.price }})</h4>
+        <div class="bg-light p-3">
+          <h4 class="fs-5 fw-medium">
+            <span class="me-1">{{ item.title }}</span> ({{ item.price }})
+          </h4>
+          <p class="text-justify text-caption text-muted mb-2">{{ item.description }}</p>
+        </div>
       </BCol>
     </BRow>
   </BContainer>
@@ -32,21 +37,30 @@ const pricingItems = [
     title: "Kitchen Cabinetry",
     price: "$50.00",
     image: "/Cabinetry.jpg",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     title: "Meeting Set",
     price: "$20.00",
     image: "/office.jpg",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     title: "Sofa Set",
     price: "$20.00",
     image: "/Renovation.jpg",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     title: "Library Set",
     price: "$20.00",
     image: "/library.jpg",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
+  
 ];
 </script>

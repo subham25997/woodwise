@@ -1,5 +1,5 @@
 <template>
-    <h2 class="display-5 fw-semibold mb-3">{{ title }}</h2>
+    <h2 class="display-5 mb-3">{{ title }}</h2>
 </template>
 <script setup lang="ts">
 defineProps({

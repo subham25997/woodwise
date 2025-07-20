@@ -21,6 +21,7 @@
             top
             height="380"
             class="rounded-0 card--img"
+            style="opacity: 0.8"
           />
           <div
             class="overlay d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100"
