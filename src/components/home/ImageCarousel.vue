@@ -10,7 +10,7 @@
     <div class="p-5">
       <MainTitle title="Custom Woodwork That Lasts a Lifetime" class="text-white" />
       <p class="fs-5 text-white mb-4">Expert carpentry for homes, offices &amp; more</p>
-      <BButton variant="light" size="lg" href="/services">
+      <BButton variant="light" size="lg" to="/services">
         EXPLORE NOW
       </BButton>
     </div>
