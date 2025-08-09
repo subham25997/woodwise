@@ -41,6 +41,8 @@ declare module 'vue' {
     BNavbarToggle: typeof import('bootstrap-vue-next/components/BNavbar')['BNavbarToggle']
     BNavItem: typeof import('bootstrap-vue-next/components/BNav')['BNavItem']
     BRow: typeof import('bootstrap-vue-next/components/BContainer')['BRow']
+    BTab: typeof import('bootstrap-vue-next/components/BTabs')['BTab']
+    BTabs: typeof import('bootstrap-vue-next/components/BTabs')['BTabs']
     Buttons: typeof import('./src/components/docs/Buttons.vue')['default']
     ChooseUs: typeof import('./src/components/home/ChooseUs.vue')['default']
     CodeSnippet: typeof import('./src/components/docs/CodeSnippet.vue')['default']

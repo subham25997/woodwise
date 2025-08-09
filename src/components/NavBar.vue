@@ -2,11 +2,12 @@
   <BNavbar :class="{ 'sticky-navbar': isSticky, shadow: isSticky }" toggleable="lg">
     <BContainer
       :fluid="width < 992"
-      class="d-flex flex-wrap align-items-md-center"
+      class="d-flex flex-wrap flex-lg-nowrap align-items-md-center"
       :style="{ paddingRight: width < 992 ? '80px' : '' }"
     >
       <BNavbarBrand href="#" class="flex-grow-1">
-        <BImg src="/logo.png" alt="Logo" height="50" class="me-2" />
+        <BImg v-if="width > 1400" src="/logo.png" alt="Logo" height="50" />
+        <BImg v-else src="/favicon.png" alt="Logo" height="50" />
       </BNavbarBrand>
 
       <AppSearch v-if="width < 992" />
@@ -55,7 +56,7 @@
             <AppSearch />
           </BNavItem>
           <BNavItem class="d-flex align-items-center">
-            <BButton class="ms-2 fs-6" size="lg" variant="primary" to="/contact-us">
+            <BButton class="ms-2 fs-6" variant="primary" to="/contact-us">
               Get Started
             </BButton>
           </BNavItem>
